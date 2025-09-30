@@ -75,7 +75,7 @@ body {
         margin-top: -5.3vw;
         overflow: hidden;
 
-        @media (min-width: 760px) {
+        @media (min-width: 960px) {
             margin-top: max(-1.66vw, -24px);
             border-top-left-radius: min(1.66vw, 24px);
             border-top-right-radius: min(1.66vw, 24px);
@@ -186,6 +186,68 @@ body {
             @media (min-width: 960px) {
                 width: 41%;
                 max-width: 591px;
+            }
+        }
+    }
+
+    /* TV-MOUNT section */
+
+    .tv-mount {
+        aspect-ratio: 750/1056;
+        background-image: url('../img/tv_mount/bg_mob.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        .tv-mount-wrap {
+            display: flex;
+            flex-direction: column;
+            gap: 6.9vw;
+        }
+
+        .tv-mount-item {
+            aspect-ratio: 500/606;
+            border-radius: 5.3vw;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 8vw;
+            display: flex;
+            align-items: flex-end;
+
+            &.item-1 {
+                background-image: url('../img/tv_mount/item-1-mob.png');
+            }
+
+            &.item-2 {
+                background-image: url('../img/tv_mount/item-2-mob.png');
+            }
+
+            &.item-3 {
+                background-image: url('../img/tv_mount/item-3-mob.png');
+            }
+
+            &.item-4 {
+                background-image: url('../img/tv_mount/item-4-mob.png');
+            }
+        }
+        .alumiglow-swiper {
+            position: relative;
+        }
+        .swiper-pagination {
+            position: absolute;
+            bottom: -14vw;
+            width: 100%;
+            text-align: center;
+
+            .swiper-pagination-bullet {
+                background-color: #595959;
+                width: min(2.1vw, 16px);
+                height: min(2.1vw, 16px);
+                opacity: 1;
+                margin: 0 min(1.3vw, 10px) !important;
+            }
+
+            .swiper-pagination-bullet-active {
+                background-color: #fff;
             }
         }
     }
