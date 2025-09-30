@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    -webkit-text-size-adjust: 100%;
+}
+
+#kivi-alumiglow {
+    --white-color: #ffffff;
+    --accent-color: #0f59d4;
+
+    font-family: 'Montserrat', sans-serif;
+    color: var(--white-color);
+    max-width: 1920px;
+    margin: 0 auto;
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0;
+        color: var(--black-color);
+    }
+
+    ul,
+    ol {
+        padding-left: 0;
+        margin: 0;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    section {
+        padding: 9.6vw 0 14.9vw 0;
+
+        @media (min-width: 960px) {
+            padding: min(7.6vw, 109px) 0 min(9.16vw, 109px) 0;
+        }
+    }
+
+    .container {
+        width: 100%;
+        max-width: 760px;
+        margin: 0 auto;
+
+        padding: 0 9.6vw;
+
+        @media (min-width: 960px) {
+            padding: 0 min(7.6vw, 109px);
+            max-width: 100%;
+        }
+
+        @media (min-width: 1440px) {
+            padding: 0;
+            max-width: 1222px;
+        }
+    }
+
+    .section-top-border {
+        border-top-left-radius: 5.3vw;
+        border-top-right-radius: 5.3vw;
+        margin-top: -5.3vw;
+        overflow: hidden;
+
+        @media (min-width: 760px) {
+            margin-top: max(-1.66vw, -24px);
+            border-top-left-radius: min(1.66vw, 24px);
+            border-top-right-radius: min(1.66vw, 24px);
+        }
+    }
+
+    .section-title {
+        font-weight: 600;
+        font-size: clamp(22px, 7.46vw, 56px);
+        line-height: 120%;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
+        color: var(--white-color);
+
+        @media (min-width: 960px) {
+            font-size: clamp(28px, 3.75vw, 54px);
+        }
+    }
+
+    .sub-title {
+    }
+
+    .main-text {
+        font-weight: 400;
+        font-size: clamp(16px, 4.26vw, 32px);
+        line-height: 150%;
+        letter-spacing: 0.01em;
+
+        @media (min-width: 960px) {
+            font-size: clamp(22px, 1.875vw, 27px);
+        }
+    }
+
+    .link {
+        text-decoration: none;
+    }
+
+    .list {
+        list-style: none;
+    }
+
+    /* HERO section */
+
+    .hero {
+        aspect-ratio: 750/1120;
+        background-image: url('../img/hero/bg_hero_mob.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @media (min-width: 960px) {
+            background-image: url('../img/hero/bg_hero_desc.jpg');
+            aspect-ratio: 1440/800;
+        }
+
+        @media (min-width: 1440px) {
+            background-image: url('../img/hero/bg_hero_wide.jpg');
+            aspect-ratio: 1750/800;
+        }
+
+        .hero-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 6.9vw;
+
+            @media (min-width: 960px) {
+                width: 32vw;
+                max-width: 450px;
+                gap: min(2.7vw, 39px);
+            }
+
+            .kivi-wrap {
+                width: 43vw;
+                max-width: 327px;
+
+                @media (min-width: 960px) {
+                    width: 16.87vw;
+                    max-width: 243px;
+                }
+            }
+
+            .alumiglow-wrap {
+                width: 100%;
+            }
+        }
+    }
+
+    /* UNIVERSAL MOUNT section */
+
+    .universal-mount {
+        aspect-ratio: 750/1120;
+        background-image: url('../img/universal_mount/universal_mount_mob.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        @media (min-width: 960px) {
+            background-image: url('../img/universal_mount/universal_mount_desc.jpg');
+            aspect-ratio: 1440/800;
+        }
+
+        @media (min-width: 1440px) {
+            background-image: url('../img/universal_mount/universal_mount_wide.jpg');
+            aspect-ratio: 1750/800;
+        }
+
+        .section-title {
+            color: var(--accent-color);
+
+            @media (min-width: 960px) {
+                width: 41%;
+                max-width: 591px;
+            }
+        }
+    }
+}
