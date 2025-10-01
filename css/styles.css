@@ -125,9 +125,16 @@ body {
         background-repeat: no-repeat;
         background-size: cover;
 
+        @media (min-width: 760px) {
+            aspect-ratio: auto;
+            height: 1120px;
+            background-position-y: center;
+        }
+
         @media (min-width: 960px) {
             background-image: url('../img/hero/bg_hero_desc.jpg');
             aspect-ratio: 1440/800;
+            height: auto;
         }
 
         @media (min-width: 1440px) {
@@ -198,10 +205,29 @@ body {
         background-size: cover;
         background-repeat: no-repeat;
 
+        @media (min-width: 760px) {
+            aspect-ratio: auto;
+            height: 1056px;
+        }
+
+        @media (min-width: 960px) {
+            aspect-ratio: auto;
+            background-image: url('../img/tv_mount/bg_desc.png');
+            height: auto;
+        }
+
+        @media (min-width: 1440px) {
+            background-image: url('../img/tv_mount/bg_wide.png');
+        }
+
         .tv-mount-wrap {
             display: flex;
             flex-direction: column;
             gap: 6.9vw;
+
+            @media (min-width: 960px) {
+                gap: min(5.41vw, 78px);
+            }
         }
 
         .tv-mount-item {
@@ -213,41 +239,85 @@ body {
             display: flex;
             align-items: flex-end;
 
+            @media (min-width: 960px) {
+                aspect-ratio: 1/1;
+                padding: min(3.95vw, 57px);
+                border-radius: min(1.52vw, 22px);
+
+                flex: 1 1 calc(50% - 20px);
+            }
+
             &.item-1 {
                 background-image: url('../img/tv_mount/item-1-mob.png');
+
+                @media (min-width: 960px) {
+                    background-image: url('../img/tv_mount/item-1-desc.png');
+                }
             }
 
             &.item-2 {
                 background-image: url('../img/tv_mount/item-2-mob.png');
+
+                @media (min-width: 960px) {
+                    background-image: url('../img/tv_mount/item-2-desc.png');
+                }
             }
 
             &.item-3 {
                 background-image: url('../img/tv_mount/item-3-mob.png');
+
+                @media (min-width: 960px) {
+                    background-image: url('../img/tv_mount/item-3-desc.png');
+                }
             }
 
             &.item-4 {
                 background-image: url('../img/tv_mount/item-4-mob.png');
+
+                @media (min-width: 960px) {
+                    background-image: url('../img/tv_mount/item-4-desc.png');
+                }
             }
         }
-        .alumiglow-swiper {
+
+        .tv-mount-swiper {
             position: relative;
-        }
-        .swiper-pagination {
-            position: absolute;
-            bottom: -14vw;
-            width: 100%;
-            text-align: center;
 
-            .swiper-pagination-bullet {
-                background-color: #595959;
-                width: min(2.1vw, 16px);
-                height: min(2.1vw, 16px);
-                opacity: 1;
-                margin: 0 min(1.3vw, 10px) !important;
+            @media (min-width: 960px) {
+                display: none;
             }
 
-            .swiper-pagination-bullet-active {
-                background-color: #fff;
+            .swiper-pagination {
+                position: absolute;
+                bottom: -14vw;
+                width: 100%;
+                text-align: center;
+
+                @media (min-width: 760px) {
+                    bottom: -10vw;
+                }
+
+                .swiper-pagination-bullet {
+                    background-color: #595959;
+                    width: min(2.1vw, 16px);
+                    height: min(2.1vw, 16px);
+                    opacity: 1;
+                    margin: 0 min(1.3vw, 10px) !important;
+                }
+
+                .swiper-pagination-bullet-active {
+                    background-color: #fff;
+                }
+            }
+        }
+
+        .tv-mount-list {
+            display: none;
+
+            @media (min-width: 960px) {
+                display: flex;
+                flex-wrap: wrap;
+                gap: min(2.77vw, 40px);
             }
         }
     }
