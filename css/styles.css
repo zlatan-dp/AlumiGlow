@@ -96,6 +96,12 @@ body {
     }
 
     .sub-title {
+        font-weight: 500;
+        font-size: clamp(20px, 5.33vw, 40px);
+
+        @media (min-width: 960px) {
+            font-size: clamp(24px, 2.08vw, 30px);
+        }
     }
 
     .main-text {
@@ -290,37 +296,6 @@ body {
             }
         }
 
-        .use-cases-swiper {
-            position: relative;
-
-            @media (min-width: 960px) {
-                display: none;
-            }
-
-            .swiper-pagination {
-                position: absolute;
-                bottom: -14vw;
-                width: 100%;
-                text-align: center;
-
-                @media (min-width: 760px) {
-                    bottom: -10vw;
-                }
-
-                .swiper-pagination-bullet {
-                    background-color: #595959;
-                    width: min(2.1vw, 16px);
-                    height: min(2.1vw, 16px);
-                    opacity: 1;
-                    margin: 0 min(1.3vw, 10px) !important;
-                }
-
-                .swiper-pagination-bullet-active {
-                    background-color: #fff;
-                }
-            }
-        }
-
         .use-cases-list {
             display: none;
 
@@ -364,6 +339,108 @@ body {
                 justify-content: center;
                 gap: min(78px, 5.41vw);
                 width: min(41vw, 591px);
+            }
+        }
+    }
+
+    /* SUNRISE-SUNSET section */
+
+    .sunrise-sunset {
+        background: linear-gradient(180deg, #002345 0%, rgba(0, 40, 80, 0) 69.23%, #01203f 100%),
+            #000;
+
+        @media (min-width: 960px) {
+            background: url('../img/sunrise_sunset/bg_sunrise_sunset-web.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .sunrise-sunset-wrap {
+            display: flex;
+            flex-direction: column;
+            gap: 6.9vw;
+
+            @media (min-width: 960px) {
+                gap: min(4.1vw, 60px);
+            }
+
+            .sunrise-sunset-item {
+                aspect-ratio: 500/606;
+                border-radius: 5.3vw;
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding: 8vw;
+                display: flex;
+                align-items: flex-end;
+                overflow: hidden;
+
+                @media (min-width: 960px) {
+                    aspect-ratio: 597/346;
+                    padding: min(2.5vw, 36px);
+                    border-radius: min(0.9vw, 13px);
+                    flex: 1 1 calc(50% - 14px);
+                    border: 0.75px solid #0081fe;
+                }
+
+                &.item-1 {
+                    background-image: url('../img/sunrise_sunset/sunrise_sunset_item-1-mob.png');
+
+                    @media (min-width: 960px) {
+                        background-image: url('../img/sunrise_sunset/sunrise_sunset_item-1-web.png');
+                    }
+                }
+
+                &.item-2 {
+                    background-image: url('../img/sunrise_sunset/sunrise_sunset_item-2-mob.png');
+
+                    @media (min-width: 960px) {
+                        background-image: url('../img/sunrise_sunset/sunrise_sunset_item-2-web.png');
+                    }
+                }
+            }
+
+            .sunrise-sunset-list {
+                display: none;
+
+                @media (min-width: 960px) {
+                    display: flex;
+                    flex-direction: row;
+                    gap: min(1.875vw, 27px);
+                }
+            }
+        }
+    }
+
+    /* ------ swiper ------- */
+
+    .swiper-container {
+        position: relative;
+        padding-bottom: 8vw;
+
+        @media (min-width: 960px) {
+            display: none;
+        }
+
+        .swiper-pagination {
+            position: absolute;
+            bottom: -3vw;
+            width: 100%;
+            text-align: center;
+
+            @media (min-width: 760px) {
+                bottom: -2vw;
+            }
+
+            .swiper-pagination-bullet {
+                background-color: #595959;
+                width: min(2.1vw, 16px);
+                height: min(2.1vw, 16px);
+                opacity: 1;
+                margin: 0 min(1.3vw, 10px) !important;
+            }
+
+            .swiper-pagination-bullet-active {
+                background-color: #fff;
             }
         }
     }
