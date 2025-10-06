@@ -1,4 +1,4 @@
-const alumiglowSwiper = new Swiper('.tv-mount-swiper', {
+const alumiglowSwiper = new Swiper('.use-cases-swiper', {
     slidesPerView: 1.2,
     spaceBetween: 24,
 
