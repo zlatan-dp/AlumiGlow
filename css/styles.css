@@ -411,6 +411,154 @@ body {
         }
     }
 
+    /* EYES STRAIN section */
+
+    .eyes-strain {
+        aspect-ratio: 750/1120;
+        background-image: url('../img/eyes_strain/bg_eyes_strain-mob.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        @media (min-width: 960px) {
+            background-image: url('../img/eyes_strain/bg_eyes_strain-desc.jpg');
+            aspect-ratio: 1440/806;
+        }
+
+        @media (min-width: 1440px) {
+            background-image: url('../img/eyes_strain/bg_eyes_strain-wide.jpg');
+            aspect-ratio: 1750/800;
+        }
+
+        .container {
+            display: flex;
+            height: 100%;
+
+            @media (min-width: 960px) {
+                justify-content: flex-end;
+            }
+        }
+
+        .eyes-strain-wrap {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            @media (min-width: 960px) {
+                justify-content: center;
+                gap: min(78px, 5.41vw);
+                width: min(41vw, 591px);
+            }
+        }
+    }
+
+    /* MAGNETIC section */
+
+    .magnetic {
+        background-image: url('../img/magnetic/bg_magnetic-mob.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        @media (min-width: 960px) {
+            background-image: url('../img/magnetic/bg_magnetic-desc.png');
+            background-position: center;
+        }
+
+        @media (min-width: 1440px) {
+            background-image: url('../img/magnetic/bg_magnetic-wide.png');
+        }
+
+        .magnetic-wrap {
+            display: flex;
+            flex-direction: column;
+            gap: 6.9vw;
+
+            @media (min-width: 960px) {
+                gap: min(4.1vw, 60px);
+            }
+
+            .section-title {
+                margin-bottom: 50vw;
+
+                @media (min-width: 960px) {
+                    margin-bottom: 0;
+                    width: min(41vw, 591px);
+                }
+            }
+
+            .main-text {
+                @media (min-width: 960px) {
+                    width: min(41vw, 591px);
+                }
+            }
+
+            .magnetic-item {
+                aspect-ratio: 500/606;
+                border-radius: 3.6vw;
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding: 8vw;
+                display: flex;
+                align-items: flex-end;
+                overflow: hidden;
+                border: 1.5px solid #0081fe;
+
+                @media (min-width: 960px) {
+                    aspect-ratio: 388/361;
+                    padding: min(2.5vw, 36px);
+                    border-radius: min(0.9vw, 13px);
+                    flex: 1 1 calc(50% - 14px);
+                    border: 0.75px solid #0081fe;
+                }
+
+                &.item-1 {
+                    background-image: url('../img/magnetic/magnetic_item-1-mob.png');
+
+                    @media (min-width: 960px) {
+                        background-image: url('../img/magnetic/magnetic_item-1-desc.png');
+                    }
+                }
+
+                &.item-2 {
+                    background-image: url('../img/magnetic/magnetic_item-2-mob.png');
+
+                    @media (min-width: 960px) {
+                        background-image: url('../img/magnetic/magnetic_item-2-desc.png');
+                    }
+                }
+
+                &.item-3 {
+                    background-image: url('../img/magnetic/magnetic_item-3-mob.png');
+
+                    @media (min-width: 960px) {
+                        background-image: url('../img/magnetic/magnetic_item-2-desc.png');
+                    }
+                }
+            }
+
+            .magnetic-list {
+                display: none;
+
+                @media (min-width: 960px) {
+                    display: flex;
+                    flex-direction: row;
+                    gap: min(1.875vw, 27px);
+                }
+            }
+        }
+    }
+
+    /* REMOTE section */
+
+    /* MOTION section */
+
+    /* VERSALITE section */
+
+    /* BENEFITS section */
+
+    /* VIDEO section */
+
+    /* SUPPORT section */
+
     /* ------ swiper ------- */
 
     .swiper-container {
