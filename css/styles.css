@@ -28,7 +28,7 @@ body {
     h5,
     h6 {
         margin: 0;
-        color: var(--black-color);
+        color: var(--white-color);
     }
 
     ul,
@@ -697,6 +697,118 @@ body {
     }
 
     /* MOTION section */
+
+    .motion {
+        background-image: url('../img/motion/bg_motion-mob.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        @media (min-width: 960px) {
+            background-image: url('../img/motion/bg_motion-desc.png');
+            background-position: center;
+        }
+
+        @media (min-width: 1440px) {
+            background-image: url('../img/motion/bg_motion-wide.png');
+        }
+
+        .motion-wrap {
+            display: flex;
+            flex-direction: column;
+            gap: 6.9vw;
+
+            @media (min-width: 960px) {
+                gap: min(4.1vw, 60px);
+            }
+
+            .section-title {
+                margin-bottom: 70vw;
+
+                @media (min-width: 960px) {
+                    margin-bottom: 0;
+                    width: min(41vw, 591px);
+                    margin-left: auto;
+                }
+            }
+
+            .main-text {
+                @media (min-width: 960px) {
+                    width: min(41vw, 591px);
+                    margin-left: auto;
+                }
+            }
+
+            .motion-item {
+                aspect-ratio: 520/606;
+                border-radius: 3.6vw;
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding: 8vw;
+                display: flex;
+                justify-content: space-between;
+                overflow: hidden;
+
+                @media (min-width: 960px) {
+                    aspect-ratio: 1/1;
+                    padding: min(2.5vw, 36px);
+                    border-radius: min(0.9vw, 13px);
+                    flex: 1 1 calc(50% - 14px);
+                }
+
+                &.item-1 {
+                    background-image: url('../img/motion/motion_item-1-mob.png');
+                    flex-direction: column;
+                    align-items: flex-end;
+
+                    @media (min-width: 960px) {
+                        background-image: url('../img/motion/motion_item-1-desc.png');
+                    }
+                }
+
+                &.item-2 {
+                    background-image: url('../img/motion/motion_item-2-mob.png');
+                    flex-direction: column;
+
+                    align-items: flex-end;
+
+                    @media (min-width: 960px) {
+                        background-image: url('../img/motion/motion_item-2-desc.png');
+                    }
+                }
+
+                &.item-3 {
+                    background-image: url('../img/motion/motion_item-3-mob.png');
+
+                    @media (min-width: 960px) {
+                        background-image: url('../img/motion/motion_item-2-desc.png');
+                    }
+                }
+
+                .motion-title {
+                    font-weight: 600;
+                    font-size: clamp(28px, 7.46vw, 56px);
+                    line-height: 120%;
+                    letter-spacing: 0.01em;
+                    text-transform: uppercase;
+
+                    @media (min-width: 960px) {
+                        font-size: clamp(20px, 2.7vw, 39px);
+                    }
+                }
+            }
+
+            .motion-list {
+                display: none;
+
+                @media (min-width: 960px) {
+                    display: flex;
+                    flex-direction: row;
+                    gap: min(1.875vw, 27px);
+                    padding-top: min(5.5vw, 80px);
+                }
+            }
+        }
+    }
 
     /* VERSALITE section */
 
