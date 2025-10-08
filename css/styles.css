@@ -84,7 +84,7 @@ body {
 
     .section-title {
         font-weight: 600;
-        font-size: clamp(22px, 7.46vw, 56px);
+        font-size: clamp(18px, 7.46vw, 56px);
         line-height: 120%;
         letter-spacing: 0.01em;
         text-transform: uppercase;
@@ -97,7 +97,7 @@ body {
 
     .sub-title {
         font-weight: 500;
-        font-size: clamp(20px, 5.33vw, 40px);
+        font-size: clamp(16px, 5.33vw, 40px);
 
         @media (min-width: 960px) {
             font-size: clamp(24px, 2.08vw, 30px);
@@ -106,7 +106,7 @@ body {
 
     .main-text {
         font-weight: 400;
-        font-size: clamp(16px, 4.26vw, 32px);
+        font-size: clamp(12px, 4.26vw, 32px);
         line-height: 150%;
         letter-spacing: 0.01em;
 
@@ -548,6 +548,153 @@ body {
     }
 
     /* REMOTE section */
+
+    .remote {
+        background-image: url('../img/remote/bg_remote-mob.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        aspect-ratio: 750/2342;
+
+        @media (min-width: 960px) {
+            background-image: url('../img/remote/bg_remote-desc.png');
+            background-position: center;
+            aspect-ratio: auto;
+        }
+
+        @media (min-width: 1440px) {
+            background-image: url('../img/remote/bg_remote-wide.png');
+        }
+
+        .remote-wrap {
+            display: flex;
+            flex-direction: column;
+            gap: 76vw;
+            margin-bottom: min(16vw, 120px);
+
+            @media (min-width: 760px) {
+                gap: 80vw;
+                margin-bottom: min(7.77vw, 112px);
+            }
+
+            @media (min-width: 960px) {
+                gap: min(5.41vw, 78px);
+                width: min(41vw, 591px);
+            }
+        }
+
+        .lighting-wrap {
+            @media (min-width: 960px) {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                align-items: flex-end;
+                gap: min(2.7vw, 40px);
+            }
+
+            .lighting-info {
+                display: flex;
+                flex-direction: column;
+                gap: 6.9vw;
+
+                @media (min-width: 960px) {
+                    gap: min(5.41vw, 78px);
+                    width: min(41vw, 591px);
+                }
+            }
+
+            .lighting-list {
+                display: none;
+
+                @media (min-width: 960px) {
+                    display: flex;
+                    gap: min(2.7vw, 40px);
+                }
+            }
+
+            .lighting-item {
+                display: flex;
+                flex-direction: column;
+                gap: min(5.3vw, 40px);
+
+                .lighting-text {
+                    font-weight: 300;
+                    font-size: clamp(10px, 3.2vw, 24px);
+
+                    @media (min-width: 960px) {
+                        font-size: clamp(14px, 1.875vw, 27px);
+                    }
+                }
+
+                .lighting-block {
+                    display: flex;
+                    gap: min(16px, 2.13vw);
+                    align-items: center;
+
+                    &::before {
+                        content: '';
+                        display: block;
+                        width: min(8vw, 60px);
+                        height: min(8vw, 60px);
+                        background-size: cover;
+                        background-repeat: no-repeat;
+
+                        @media (min-width: 960px) {
+                            width: min(3.47vw, 50px);
+                            height: min(3.47vw, 50px);
+                        }
+                    }
+
+                    &.item-1::before {
+                        background-image: url('../img/remote/lighting-item-1.svg');
+                    }
+
+                    &.item-2::before {
+                        background-image: url('../img/remote/lighting-item-2.svg');
+                    }
+
+                    &.item-3::before {
+                        background-image: url('../img/remote/lighting-item-3.svg');
+                    }
+
+                    &.item-4::before {
+                        background-image: url('../img/remote/lighting-item-4.svg');
+                    }
+
+                    &.item-5::before {
+                        background-image: url('../img/remote/lighting-item-5.svg');
+                    }
+
+                    &.item-6::before {
+                        background-image: url('../img/remote/lighting-item-6.svg');
+                    }
+
+                    &.item-7::before {
+                        background-image: url('../img/remote/lighting-item-7.svg');
+                    }
+
+                    &.item-8::before {
+                        background-image: url('../img/remote/lighting-item-8.svg');
+                    }
+
+                    &.item-9::before {
+                        background-image: url('../img/remote/lighting-item-9.svg');
+                    }
+
+                    &.item-10::before {
+                        background-image: url('../img/remote/lighting-item-10.svg');
+                    }
+
+                    &.item-11::before {
+                        background-image: url('../img/remote/lighting-item-11.svg');
+                    }
+
+                    &.item-12::before {
+                        background-image: url('../img/remote/lighting-item-12.svg');
+                    }
+                }
+            }
+        }
+    }
 
     /* MOTION section */
 

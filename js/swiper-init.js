@@ -42,3 +42,18 @@ const magneticSwiper = new Swiper('.magnetic-swiper', {
         },
     },
 });
+
+const lightingSwiper = new Swiper('.lighting-swiper', {
+    slidesPerView: 2.05,
+    spaceBetween: 12,
+
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    breakpoints: {
+        561: {
+            spaceBetween: 24,
+        },
+    },
+});
