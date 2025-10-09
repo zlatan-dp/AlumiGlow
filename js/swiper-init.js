@@ -72,3 +72,18 @@ const motionSwiper = new Swiper('.motion-swiper', {
         },
     },
 });
+
+const benefitsSwiper = new Swiper('.benefits-swiper', {
+    slidesPerView: 1.2,
+    spaceBetween: 24,
+
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    breakpoints: {
+        561: {
+            spaceBetween: 48,
+        },
+    },
+});
