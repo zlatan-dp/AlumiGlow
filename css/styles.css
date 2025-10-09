@@ -473,7 +473,7 @@ body {
             gap: 6.9vw;
 
             @media (min-width: 960px) {
-                gap: min(4.1vw, 60px);
+                gap: min(78px, 5.41vw);
             }
 
             .section-title {
@@ -718,7 +718,7 @@ body {
             gap: 6.9vw;
 
             @media (min-width: 960px) {
-                gap: min(4.1vw, 60px);
+                gap: min(78px, 5.41vw);
             }
 
             .section-title {
@@ -811,6 +811,79 @@ body {
     }
 
     /* VERSALITE section */
+
+    .versalite {
+        background-image: url('../img/versalite/bg_versalite-mob.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        @media (min-width: 960px) {
+            background-image: url('../img/versalite/bg_versalite-desc.png');
+            background-position: center;
+        }
+
+        @media (min-width: 1440px) {
+            background-image: url('../img/versalite/bg_versalite-wide.png');
+        }
+
+        .versalite-info {
+            display: flex;
+            flex-direction: column;
+            gap: 58vw;
+
+            @media (min-width: 960px) {
+                padding-right: 30px;
+                gap: min(78px, 5.41vw);
+                width: min(41vw, 591px);
+            }
+        }
+
+        .versalite-list {
+            margin-top: min(9.3vw, 70px);
+            display: flex;
+            flex-direction: column;
+            gap: min(6.66vw, 50px);
+
+            @media (min-width: 960px) {
+                flex-direction: row;
+                gap: min(1.875vw, 27px);
+                margin-top: min(6.56vw, 94px);
+            }
+
+            .versalite-item {
+                display: flex;
+                gap: min(3.33vw, 25px);
+                align-items: center;
+
+                @media (min-width: 960px) {
+                    flex: 1 1 calc(33% - 13px);
+                    gap: min(2.5vw, 36px);
+                    padding: min(2.2vw, 32px);
+                    border: 0.75px solid #fff;
+                    border-radius: min(1vw, 13px);
+                }
+
+                .img-wrap {
+                    flex-shrink: 0;
+                    width: min(12.2vw, 92px);
+
+                    @media (min-width: 960px) {
+                        width: min(4.16vw, 60px);
+                    }
+                }
+
+                .main-text {
+                    padding-left: min(3.33vw, 25px);
+                    border-left: 1px solid var(--white-color);
+
+                    @media (min-width: 960px) {
+                        padding-left: 0;
+                        border-left: none;
+                    }
+                }
+            }
+        }
+    }
 
     /* BENEFITS section */
 
