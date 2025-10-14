@@ -973,6 +973,134 @@ body {
 
     /* VIDEO section */
 
+    .video {
+        padding: 0;
+
+        .yt-container {
+            width: 100%;
+
+            iframe {
+                display: block;
+            }
+        }
+    }
+
+    /* SPECS section */
+
+    .specs {
+        background: linear-gradient(180deg, #56404c 0%, #000 100%);
+        overflow: hidden;
+
+        .specs-wrap {
+            display: flex;
+            flex-direction: column;
+            gap: 6.9vw;
+
+            @media (min-width: 960px) {
+                gap: min(78px, 5.41vw);
+            }
+
+            .swiper-wrapper {
+                align-items: center;
+            }
+
+            .specs-slide {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: min(4.8vw, 36px);
+            }
+
+            .specs-item {
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+
+                .specs-text {
+                    flex-shrink: 0;
+                    font-weight: 300;
+                    font-size: clamp(10px, 3.2vw, 24px);
+                    letter-spacing: -0.01em;
+
+                    @media (min-width: 960px) {
+                        font-size: clamp(14px, 1.875vw, 27px);
+                    }
+                }
+
+                .doted {
+                    width: 100%;
+                    height: 2px;
+                    margin: 0 4px;
+                    flex-grow: 1;
+
+                    background-image: repeating-linear-gradient(
+                        to right,
+                        #0081fe,
+                        #0081fe 2px,
+                        transparent 2px,
+                        transparent 8px
+                    );
+                }
+
+                .done-icon {
+                    display: flex;
+                    flex-shrink: 0;
+                    justify-content: center;
+                    align-items: center;
+                    color: var(--white-color);
+                    width: clamp(10px, 3.2vw, 24px);
+                    height: clamp(10px, 3.2vw, 24px);
+                    border-radius: min(0.8vw, 6px);
+                    background-color: #0081fe;
+
+                    @media (min-width: 960px) {
+                        width: clamp(14px, 1.875vw, 27px);
+                        height: clamp(14px, 1.875vw, 27px);
+                    }
+                }
+
+                .spec-accent {
+                    font-weight: 600;
+                    color: #0081fe;
+                }
+            }
+
+            .specs-list {
+                display: none;
+
+                @media (min-width: 960px) {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    /* gap: min(6.66vw, 96px); */
+
+                    .specs-item-wrap {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: min(2.5vw, 36px);
+                        justify-content: center;
+
+                        &:not(:last-child) {
+                            margin-bottom: min(2.5vw, 36px);
+
+                            &::after {
+                                content: '';
+                                display: block;
+                                width: 100%;
+                                height: 1px;
+                                background-color: #0081fe;
+                            }
+                        }
+
+                        .specs-item {
+                            flex: 0 1 calc(50% - 18px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     /* SUPPORT section */
 
     /* ------ swiper ------- */

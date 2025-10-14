@@ -87,3 +87,18 @@ const benefitsSwiper = new Swiper('.benefits-swiper', {
         },
     },
 });
+
+const specsSwiper = new Swiper('.specs-swiper', {
+    slidesPerView: 1.1,
+    spaceBetween: 24,
+
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    breakpoints: {
+        561: {
+            spaceBetween: 48,
+        },
+    },
+});
