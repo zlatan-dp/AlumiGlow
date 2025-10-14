@@ -990,6 +990,7 @@ body {
     .specs {
         background: linear-gradient(180deg, #56404c 0%, #000 100%);
         overflow: hidden;
+        margin-top: -2px;
 
         .specs-wrap {
             display: flex;
