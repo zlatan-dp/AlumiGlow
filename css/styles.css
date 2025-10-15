@@ -992,6 +992,9 @@ body {
         overflow: hidden;
         margin-top: -2px;
 
+        @media (min-width: 960px) {
+            background: radial-gradient(85.07% 79.75% at 25.56% 16.67%, #5b4451 0%, #000 100%);
+        }
         .specs-wrap {
             display: flex;
             flex-direction: column;
@@ -1103,6 +1106,154 @@ body {
     }
 
     /* SUPPORT section */
+
+    .support {
+        background: linear-gradient(180deg, #002345 0%, #000 100%);
+
+        .support-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 6.9vw;
+
+            @media (min-width: 960px) {
+                gap: min(78px, 5.41vw);
+            }
+
+            .section-title {
+                font-size: clamp(16px, 6.53vw, 49px);
+                text-align: center;
+
+                @media (min-width: 960px) {
+                    font-size: clamp(28px, 3.75vw, 54px);
+                }
+            }
+
+            .support-info-wrap {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 6.9vw;
+
+                @media (min-width: 960px) {
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                .email-block {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: min(3.33vw, 25px);
+
+                    @media (min-width: 960px) {
+                        gap: min(1vw, 15px);
+                    }
+
+                    .icon-wrap {
+                        width: min(30vw, 255px);
+
+                        @media (min-width: 960px) {
+                            width: min(8.81vw, 127px);
+                        }
+                    }
+
+                    .email-adress {
+                        font-weight: 400;
+                        font-size: clamp(14px, 5vw, 38px);
+                        letter-spacing: 0.01em;
+                        color: var(--white-color);
+
+                        @media (min-width: 960px) {
+                            font-size: clamp(16px, 1.45vw, 21px);
+                        }
+                    }
+                }
+
+                .qr-block {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: min(6.66vw, 50px);
+
+                    @media (min-width: 960px) {
+                        flex-wrap: nowrap;
+                        gap: min(2.7vw, 39px);
+                    }
+
+                    .qr-wrap {
+                        flex: 1 1 calc(50% - 26px);
+
+                        @media (min-width: 960px) {
+                            flex: 1 1 auto;
+                            width: min(7.3vw, 105px);
+                        }
+
+                        &.warranty {
+                            display: flex;
+                            flex-direction: column;
+                            gap: min(0.5vw, 4px);
+                            justify-content: center;
+
+                            @media (min-width: 960px) {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                .warranty-block {
+                    display: none;
+
+                    @media (min-width: 960px) {
+                        display: flex;
+                        flex-direction: column;
+                        gap: min(0.2vw, 4px);
+                        justify-content: center;
+                    }
+                }
+
+                .years-wrap {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: baseline;
+
+                    .warranty-years {
+                        font-weight: 300;
+                        font-size: clamp(22px, 7.8vw, 56px);
+                        color: var(--white-color);
+                        letter-spacing: 0.01em;
+                        text-transform: uppercase;
+                        line-height: 120%;
+
+                        @media (min-width: 960px) {
+                            font-size: clamp(20px, 3.125vw, 45px);
+                        }
+                    }
+
+                    .number-wrap {
+                        width: min(9vw, 68px);
+
+                        @media (min-width: 960px) {
+                            width: min(3.6vw, 52px);
+                        }
+                    }
+                }
+
+                .warranty-text {
+                    font-weight: 300;
+                    font-size: clamp(22px, 7.8vw, 56px);
+                    color: var(--white-color);
+                    letter-spacing: 0.01em;
+                    text-transform: uppercase;
+                    line-height: 120%;
+
+                    @media (min-width: 960px) {
+                        font-size: clamp(20px, 3.1vw, 44px);
+                    }
+                }
+            }
+        }
+    }
 
     /* ------ swiper ------- */
 
