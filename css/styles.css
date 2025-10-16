@@ -553,12 +553,10 @@ body {
         background-image: url('../img/remote/bg_remote-mob.png');
         background-size: cover;
         background-repeat: no-repeat;
-        aspect-ratio: 750/2342;
 
         @media (min-width: 960px) {
             background-image: url('../img/remote/bg_remote-desc.png');
             background-position: center;
-            aspect-ratio: auto;
         }
 
         @media (min-width: 1440px) {
