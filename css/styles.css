@@ -565,6 +565,10 @@ body {
             background-image: url('../img/remote/bg_remote-wide.png');
         }
 
+        @media (min-width: 1800px) {
+            background-position: 0% 0%;
+        }
+
         .remote-wrap {
             display: flex;
             flex-direction: column;
@@ -780,7 +784,7 @@ body {
                     background-image: url('../img/motion/motion_item-3-mob.png');
 
                     @media (min-width: 960px) {
-                        background-image: url('../img/motion/motion_item-2-desc.png');
+                        background-image: url('../img/motion/motion_item-3-desc.png');
                     }
                 }
 
